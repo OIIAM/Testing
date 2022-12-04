@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width" >
+    <title>Assignment 1 Gallery </title>
+    <link rel="stylesheet" href="NotMain.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <Header>
+        <nav class="nav">
+          <div class="logodiv">
+              <a href="/index.html"><img class ="logo" src = "/images/new_twice_logo_x300.avif" alt="logo"></a>
+          </div>
+          <ul class="nav-list" id="navList">
+                  <li class="items">
+                      <a href = "/index.html">
+                          Home
+                      </a>
+                  </li>
+    
+                  <li class="items">
+                      <a href = "/html(notMain)/MemberPage.html">
+                          Members Page
+                      </a>
+                  </li>
+    
+                  <li class="items">
+                      <a href = "/html(notMain)/History.html">
+                          History
+                      </a>
+                  </li>
+  
+                  <li class="items">
+                    <a href = "/html(notMain)/Gallery.html">
+                        Photo Gallery
+                    </a>
+                </li>
+    
+                  <li class="items">
+                      <a href = "/html(notMain)/Music-Video.html">
+                          Music Videos
+                      </a>
+                  </li>
+          </ul>
+          <div class="menu" id ="menubutton">
+            <img class="bars" src = "/images/menu.png" alt="menu">
+          </div>
+        </nav>
+        <h1 class="galleryHead">
+            Twice's Photo Gallery
+        </h1>
+      </Header> 
+
+    <section class="Gallery">
+        <button onclick = "TOPFunction()" id="BackToTopBtn"><img src="/images/caret.png" alt="TOP"></button>
+        
+        
+        <div class="zoom-img" id="zoom-img-id">
+            <img src="/images/Jihyo_FS.jpg" alt="Jihyo" id="ZoomImg">
+            <span onclick = "ExitZoomIMG()"> <img src="/images/closeImg.png" alt = "X"></span>
+        </div>
+        <div class="gallery">
+            <img src="/images/FeelSpecial/Twice_FS.jpg" alt="Twice_FS" onclick = "OpenZoomIMG(this.src)">
+            <img src="/images/FeelSpecial/Jihyo_FS.jpg" alt="Jihyo_FS" onclick = "OpenZoomIMG(this.src)">
+            <img src="/images/FeelSpecial/Mina_FS.jpg" alt="Mina_FS" onclick = "OpenZoomIMG(this.src)">
+            <img src="/images/FeelSpecial/Sana_FS.jpg" alt="Sana_FS" onclick = "OpenZoomIMG(this.src)">
+            <img src="/images/FeelSpecial/Tzuyu_FS.jpg" alt="Tzuyu_FS" onclick = "OpenZoomIMG(this.src)">
+            <img src="/images/FeelSpecial/Momo_FS.jpg" alt="Momo_FS" onclick = "OpenZoomIMG(this.src)">
+            <img src="/images/FeelSpecial/Jeongyeon_FS.jpg" alt="Jeongyeon_FS" onclick = "OpenZoomIMG(this.src)">
+            <img src="/images/FeelSpecial/Chaeyoung_FS.jpg" alt="Chaeyoung_FS" onclick = "OpenZoomIMG(this.src)">
+            <img src="/images/FeelSpecial/Nayeon_FS.jpg" alt="Nayeon_FS" onclick = "OpenZoomIMG(this.src)">
+            <img src="/images/FeelSpecial/Dahyun_FS.jpg" alt="Dahyun_FS" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Twice_Fancy.jpg" alt ="_1_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Twice_Fancy_2.jpg" alt ="_2_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Jihyo_Fancy_1.jpg" alt ="_1_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Jihyo_Fancy_2.jpg" alt ="_2_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Nayeon_Fancy_1.jpg" alt ="_1_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Nayeon_Fancy_2.jpg" alt ="_2_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Mina_Fancy_1.jpg" alt ="_1_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Mina_Fancy_2.jpg" alt ="_2_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Momo_Fancy_1.jpg" alt ="_1_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Momo_Fancy_2.jpg" alt ="_2_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Jeongyeon_Fancy_1.jpg" alt ="_1_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Jeongyeon_Fancy_2.jpg" alt ="_2_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Sana_Fancy_1.jpg" alt ="_1_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Sana_Fancy_2.jpg" alt ="_2_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Dahyun_Fancy_1.jpg" alt ="_1_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Dahyun_Fancy_2.jpg" alt ="_2_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Chaeyoung_Fancy_1.jpg" alt ="_1_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Chaeyoung_Fancy_2.jpg" alt ="_2_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Tzuyu_Fancy_1.jpg" alt ="_1_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Fancy/Tzuyu_Fancy_2.jpg" alt ="_2_Fancy" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/YesorYes/Sana_YOY.jpg" alt ="Sana_YOY" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/YesorYes/Jihyo_YOY.jpg" alt ="Jhyo_YOY" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/YesorYes/Mina_YOY.jpg" alt ="Mina_YOY" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/YesorYes/Nayeon_YOY.jpg" alt ="Nayeon_YOY" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/YesorYes/Jeongyeon_YOY.jpg" alt ="JeongYeon_YOY" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/YesorYes/Dahyun_YOY.jpg" alt ="Dahyun_YOY" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/YesorYes/Tzuyu_YOY.jpg" alt ="Tzuyu_YOY" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/YesorYes/Momo_YOY.jpg" alt ="Momo_YOY" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/YesorYes/Chaeyoung_YOY.jpg" alt ="Chaeyoung_YOY" onclick = "OpenZoomIMG(this.src)">
+            <img src ="/images/Twice_TalkThatTalk.jpeg" alt ="Twice_TTT" onclick = "OpenZoomIMG(this.src)">
+
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-column">
+              <h4>Follow Twice!</h4>
+              <div class="footer-socials">
+                <a href="https://www.youtube.com/channel/UCzgxx_DM2Dcb9Y1spb9mUJA">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/twicetagram/?hl=en">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/JYPETWICE">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://twice.jype.com/">
+                  <i class="fa-brands fa-chrome"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-column">
+              <h4>Play their Game!</h4>
+              <div class="footer-game">
+                <a href="https://apps.apple.com/us/app/superstar-jypnation/id1086866467">
+                  <i class="fa-brands fa-app-store"></i>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.dalcomsoft.ss.jyp&hl=en_SG&gl=US&pli=1">
+                  <i class="fa-brands fa-google-play"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="/Main.js"></script>
+    <script src="https://kit.fontawesome.com/a9ca8639dc.js" crossorigin="anonymous"></script>
+  </body>
+</html>

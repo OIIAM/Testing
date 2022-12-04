@@ -1,0 +1,112 @@
+/* Reset */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+/* navbar */
+
+  .nav{
+    background-color: lightgrey;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+  }
+ .logo{
+    height:50px;
+ }
+ .logodiv{
+    width:100%;
+ }
+ .nav-list{
+    list-style-type: none;
+    width:100%;
+    text-align:center;
+    padding-top:10px;
+ }
+ .nav-list .items{
+    display: inline-block;
+    padding:20px 10px;
+ }
+  .nav a{
+    color:#ff5fa2;
+    text-decoration: none;
+  }
+  .nav a:hover{
+    color:#fcc89b ;
+  }
+  .menu{
+    display: none;
+  }
+
+  .bars{
+    width: 25px;
+    height:25px;
+  }
+  @media all and (max-width: 960px){
+    .nav{
+        flex-direction: column;
+
+    }
+    .menu{
+        display:block;
+        position:absolute;
+        right:20px;
+        top:20px;
+    }
+    .nav-list{
+        list-style-type: none;
+        width:100%;
+        text-align:center;
+        padding-top:10px;
+        display:none;
+    }
+    .nav-list .items{
+        display:block;
+        border-top: 1px solid white;
+    }
+    .icon{
+        margin-top:20px;
+        margin-left:15px;
+    }
+    .active{
+        display:block;
+    }
+  }
+
+  /*background image*/
+  .bgimg{
+    background-image:url("images/Twice_pic_heading.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    height:100vh;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: black;
+  }
+
+   /* footer */
+   .footer{
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    gap:10px;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #eee;
+    color:#ff5fa2;
+  }
+  .footer-container h4{
+    font-size:20px;
+  }
+.footer-container a{
+    font-size:20px;
+}
